@@ -1,0 +1,24 @@
+{
+  "name": "neutro-subgraph",
+  "version": "1.0.0",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "create-testnet": "graph create neutro-amm --node http://13.59.70.85:8020",
+    "deploy-testnet": "graph deploy neutro-amm --ipfs https://ipfs.network.thegraph.com --node http://13.59.70.85:8020"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.16.0",
+    "@graphprotocol/graph-ts": "^0.16.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  },
+  "resolutions": {
+    "concat-stream": "^2.0.0"
+  }
+}
